@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+}
+.container .left-column {
+  padding: 20px;
+  margin-left: 2em;
+}
+.container .left-column .logo {
+  display: flex;
+  align-items: center;
+}
+.container .left-column .logo img {
+  width: 30px;
+  height: 30px;
+  margin-top: 0;
+  margin-right: 10px;
+}
+.container .left-column .logo h1 {
+  margin: 0;
+}
+.container .left-column .menu {
+  list-style-type: none;
+  padding: 0;
+}
+.container .left-column .menu li {
+  margin-bottom: 10px;
+}
+.container .left-column .menu li a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  position: relative;
+}
+.container .left-column .menu li a:hover:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+.container .left-column .menu li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+.container .right-column {
+  padding: 20px;
+}
+.container .right-column .project {
+  margin-bottom: 2em;
+}
+.container .right-column .project a {
+  text-decoration: none;
+  color: inherit;
+}
+.container .right-column .project a h2,
+.container .right-column .project a h3 {
+  margin: 0;
+}
+.container .right-column .project a h2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+.container .right-column .project a h2 .arrow {
+  margin-left: 0.3em;
+  transition: transform 0.3s ease;
+}
+.container .right-column .project a h2:hover .arrow {
+  transform: translateX(5px);
+}
+.container .right-column .project a p {
+  margin: 0;
+}
+.container .right-column .project img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+hr {
+  background-color: white;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+}
+footer .footer-column {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-column .contact {
+  margin-bottom: 30px;
+}
+footer .footer-column .contact h2 {
+  margin-bottom: 10px;
+}
+footer .footer-column .contact form {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-column .contact form input,
+footer .footer-column .contact form textarea {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+footer .footer-column .contact form button {
+  padding: 5px 10px;
+  background-color: white;
+  color: #2a2a2a;
+  border: none;
+  cursor: pointer;
+}
+footer .footer-column .footer-info {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-column .footer-info .footer-info-column {
+  display: flex;
+  align-items: center;
+}
+footer .footer-column .footer-info .footer-info-column a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+footer .footer-column .footer-info .footer-info-column a img {
+  width: 20px;
+  margin-right: 5px;
+  filter: invert(79%) sepia(17%) saturate(0) brightness(98%) contrast(99%);
+}
+footer .footer-column .footer-info .footer-info-column span {
+  margin-right: 10px;
+  position: relative;
+}
+footer .footer-column .footer-info .footer-info-column span:hover:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+footer .footer-column .footer-info .footer-info-column span:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}/*# sourceMappingURL=main.css.map */

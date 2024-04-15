@@ -1,0 +1,223 @@
+// Edited from ChatGPT
+// Variables
+$primary-color: #2a2a2a;
+$secondary-color: white;
+
+@mixin underline-hover($color) {
+    position: relative;
+
+    &:hover {
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 100%; // Start with width 0 
+            height: 2px;
+            background-color: $color;
+            transition: width 0.3s ease; // Transition width property
+        }
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 0; // Initially set to full width 
+        height: 2px;
+        background-color: $color;
+        transition: width 0.3s ease; // Transition width property 
+    }
+}
+
+// Base styles
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: $primary-color;
+    color: $secondary-color;
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    //   margin-left: 3em; 
+
+
+    .left-column {
+        padding: 20px;
+        margin-left: 2em;
+
+        .logo {
+            display: flex;
+            align-items: center;    
+            // margin: 0;
+
+            img {
+                width: 30px;
+                height: 30px;
+                margin-top: 0;
+                margin-right: 10px;
+            }
+
+            h1 {
+                margin: 0;
+            }
+        }
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                margin-bottom: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    position: relative;
+
+                    @include underline-hover(white);
+
+                    // &:hover:after {
+                    //     content: '';
+                    //     position: absolute;
+                    //     left: 0;
+                    //     bottom: -3px;
+                    //     width: 100%;
+                    //     height: 2px;
+                    //     background-color: $secondary-color;
+                    // }
+                }
+            }
+        }
+    }
+
+    .right-column {
+        padding: 20px;
+
+        .project {
+            margin-bottom: 2em;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+
+                h2,
+                h3 {
+                    margin: 0;
+                }
+
+                h2 {
+                    display: flex;
+                    align-items: center;
+
+                    .arrow {
+                        margin-left: .3em;
+                        transition: transform 0.3s ease;
+                    }
+
+                    &:hover .arrow {
+                        transform: translateX(5px);
+                    }
+
+                    margin-bottom: .5em;
+                }
+
+                p {
+                    margin: 0;
+                    // margin-bottom: 5em;      
+                }
+            }
+
+            // margin-bottom: 10px;
+
+
+            img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+hr {
+    // height: 2px;
+    background-color: $secondary-color;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+
+    .empty-column {
+        // Empty column
+    }
+
+    .footer-column {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+
+        .contact {
+            margin-bottom: 30px;
+
+            h2 {
+                margin-bottom: 10px;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+
+                input,
+                textarea {
+                    margin-bottom: 10px;
+                    padding: 5px;
+                }
+
+                button {
+                    padding: 5px 10px;
+                    background-color: $secondary-color;
+                    color: $primary-color;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .footer-info {
+            display: flex;
+            justify-content: space-between;
+
+            .footer-info-column {
+                display: flex;
+                align-items: center;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    color: inherit;
+
+                    img {
+                        width: 20px;
+                        // height: 30px;
+                        margin-right: 5px;
+                        filter: invert(79%) sepia(17%) saturate(0) brightness(98%) contrast(99%);
+                    }
+                }
+
+                span {
+                    margin-right: 10px;
+                    @include underline-hover(white);
+                }
+            }
+        }
+    }
+}
