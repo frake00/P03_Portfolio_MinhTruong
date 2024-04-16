@@ -17,6 +17,8 @@ body {
 .container .left-column .logo {
   display: flex;
   align-items: center;
+  text-decoration: none;
+  color: white;
 }
 .container .left-column .logo img {
   width: 30px;
@@ -103,57 +105,55 @@ footer {
   display: grid;
   grid-template-columns: 3fr 7fr;
 }
+footer p {
+  margin-top: 0;
+}
 footer .footer-column {
   padding: 20px;
   display: flex;
   flex-direction: column;
 }
-footer .footer-column .contact {
-  margin-bottom: 30px;
-}
-footer .footer-column .contact h2 {
-  margin-bottom: 10px;
-}
-footer .footer-column .contact form {
+footer .footer-column .about-n-contact {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
 }
-footer .footer-column .contact form input,
-footer .footer-column .contact form textarea {
-  margin-bottom: 10px;
-  padding: 5px;
+footer .footer-column .about-n-contact .about,
+footer .footer-column .about-n-contact .contact {
+  flex: 1;
+  margin-bottom: 1em;
+  justify-content: space-around;
 }
-footer .footer-column .contact form button {
-  padding: 5px 10px;
-  background-color: white;
-  color: #2a2a2a;
-  border: none;
-  cursor: pointer;
+footer .footer-column .about-n-contact .about .footer-info,
+footer .footer-column .about-n-contact .contact .footer-info {
+  flex-wrap: wrap;
 }
-footer .footer-column .footer-info {
+footer .footer-column .about-n-contact .about .footer-info .footer-info-column,
+footer .footer-column .about-n-contact .contact .footer-info .footer-info-column {
   display: flex;
-  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 1em;
 }
-footer .footer-column .footer-info .footer-info-column {
-  display: flex;
-  align-items: center;
-}
-footer .footer-column .footer-info .footer-info-column a {
+footer .footer-column .about-n-contact .about .footer-info .footer-info-column a,
+footer .footer-column .about-n-contact .contact .footer-info .footer-info-column a {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: inherit;
 }
-footer .footer-column .footer-info .footer-info-column a img {
+footer .footer-column .about-n-contact .about .footer-info .footer-info-column a img,
+footer .footer-column .about-n-contact .contact .footer-info .footer-info-column a img {
   width: 20px;
   margin-right: 5px;
   filter: invert(79%) sepia(17%) saturate(0) brightness(98%) contrast(99%);
 }
-footer .footer-column .footer-info .footer-info-column span {
+footer .footer-column .about-n-contact .about .footer-info .footer-info-column span,
+footer .footer-column .about-n-contact .contact .footer-info .footer-info-column span {
   margin-right: 10px;
   position: relative;
 }
-footer .footer-column .footer-info .footer-info-column span:hover:after {
+footer .footer-column .about-n-contact .about .footer-info .footer-info-column span:hover:after,
+footer .footer-column .about-n-contact .contact .footer-info .footer-info-column span:hover:after {
   content: "";
   position: absolute;
   left: 0;
@@ -163,7 +163,8 @@ footer .footer-column .footer-info .footer-info-column span:hover:after {
   background-color: white;
   transition: width 0.3s ease;
 }
-footer .footer-column .footer-info .footer-info-column span:after {
+footer .footer-column .about-n-contact .about .footer-info .footer-info-column span:after,
+footer .footer-column .about-n-contact .contact .footer-info .footer-info-column span:after {
   content: "";
   position: absolute;
   left: 0;
@@ -172,4 +173,39 @@ footer .footer-column .footer-info .footer-info-column span:after {
   height: 2px;
   background-color: white;
   transition: width 0.3s ease;
+}
+footer .footer-column .about-n-contact .about h2,
+footer .footer-column .about-n-contact .contact h2 {
+  margin-bottom: 10px;
+}
+footer .footer-column .about-n-contact .about form,
+footer .footer-column .about-n-contact .contact form {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-column .about-n-contact .about form input,
+footer .footer-column .about-n-contact .about form textarea,
+footer .footer-column .about-n-contact .contact form input,
+footer .footer-column .about-n-contact .contact form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+footer .footer-column .about-n-contact .about form button,
+footer .footer-column .about-n-contact .contact form button {
+  padding: 10px 20px;
+  background-color: white;
+  color: #2a2a2a;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+footer .footer-column .about-n-contact .about form button:hover,
+footer .footer-column .about-n-contact .contact form button:hover {
+  background-color: #cccccc;
 }/*# sourceMappingURL=main.css.map */
