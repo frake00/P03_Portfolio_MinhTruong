@@ -13,7 +13,7 @@
   bottom: -3px;
   width: 100%;
   height: 2px;
-  background-color: white;
+  background-color: rgb(230, 144, 15);
   transition: width 0.3s ease;
 }
 .element a:after {
@@ -23,7 +23,7 @@
   bottom: -3px;
   width: 0;
   height: 2px;
-  background-color: white;
+  background-color: rgb(230, 144, 15);
   transition: width 0.3s ease;
 }
 
@@ -78,7 +78,7 @@ body {
   bottom: -3px;
   width: 100%;
   height: 2px;
-  background-color: white;
+  background-color: rgb(230, 144, 15);
   transition: width 0.3s ease;
 }
 .container .left-column .menu li a:after {
@@ -88,7 +88,7 @@ body {
   bottom: -3px;
   width: 0;
   height: 2px;
-  background-color: white;
+  background-color: rgb(230, 144, 15);
   transition: width 0.3s ease;
 }
 .container .right-column {
@@ -189,7 +189,7 @@ footer .footer-column .about-n-contact .contact .footer-info .footer-info-column
   bottom: -3px;
   width: 100%;
   height: 2px;
-  background-color: white;
+  background-color: rgb(230, 144, 15);
   transition: width 0.3s ease;
 }
 footer .footer-column .about-n-contact .about .footer-info .footer-info-column span:after,
@@ -200,7 +200,7 @@ footer .footer-column .about-n-contact .contact .footer-info .footer-info-column
   bottom: -3px;
   width: 0;
   height: 2px;
-  background-color: white;
+  background-color: rgb(230, 144, 15);
   transition: width 0.3s ease;
 }
 footer .footer-column .about-n-contact .about h2,
