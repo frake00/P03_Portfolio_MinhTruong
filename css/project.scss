@@ -1,0 +1,105 @@
+.right-column {
+    padding: 20px;
+    margin-right: 30%;
+
+    h1,
+    h2,
+    h3,
+    p,
+    img {
+        margin-bottom: 16px;
+        margin-top: 0;
+    }
+
+    img {
+        //   max-width: 100%; 
+        width: 100%;
+        height: auto;
+        // margin-bottom: 20px; 
+    }
+
+    .video-container {
+        margin-bottom: 1em;
+        position: relative;
+        padding-bottom: 56.25%; // 16:9 aspect ratio
+        overflow: hidden;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 1em;
+
+        .gallery-item {
+            // overflow: hidden;
+            // border-radius: 8px; 
+            // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    }
+
+    .other-project {
+        margin-bottom: 2em;
+        display: flex;
+        align-items: flex-start;
+      
+        a {
+          text-decoration: none;
+          color: inherit;
+          display: flex;
+          align-items: flex-start;
+          width: 100%;
+      
+          .project-details {
+            align-self: center; 
+            margin-left: 1em;
+      
+            h2,
+            h3 {
+              margin: 0;
+            }
+      
+            h2 {
+              display: flex;
+              align-items: center; 
+              margin-bottom: .5em;
+      
+              .arrow {
+                margin-left: .3em; 
+                transition: transform 0.3s ease;
+              }
+      
+              &:hover .arrow {
+                transform: translateX(5px);
+              }
+            }
+      
+            p {
+              margin: 0;
+            }
+          }
+        }
+      
+        img {
+          width: 20em ; // Adjust the width as needed 
+          height: auto;
+          margin-right: 0; // Add margin between the thumbnail and content
+          margin-bottom: 0; 
+        }
+      }
+       
+
+}
