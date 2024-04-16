@@ -98,7 +98,7 @@ body {
                     color: inherit;
                     position: relative;
 
-                    @include underline-hover($tertiary-color); 
+                    @include underline-hover($tertiary-color);
 
                     // &:hover:after {
                     //     content: '';
