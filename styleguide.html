@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style Guide</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body style="margin: 3em;">
+  <br>
+  <Br>
+  <br>
+  <header>
+    <h1>Style Guide P03 - Porfolio</h1>
+
+    <p>A template you can use to start building out your own style guides with.</p>
+
+    <section>
+      <a href="#interactive_elements">Interactive Elements</a>
+      <a href="#text_elements">Text Elements</a>
+      <a href="#combined_elements">Combined Elements</a>
+      <a href="courses.html">Service Listing Template</a>
+      <a href="checkout.html">Checkout Template</a>
+      <a href="#citations">Citations</a>
+    </section>
+  </header>
+
+
+  <!-- INTERACTIVE ELEMENTS SECTION // -->
+  <section id="interactive_elements">
+    <h2>Interactive Elements</h2>
+
+
+    <section class="element">
+      <h3>In-text link</h3>
+      <!-- from chatgpt -->
+      <a href="https://www.link.test">In-text link</a>
+    </section>
+
+
+    <!-- Default Button styling section -->
+    <section class="element">
+
+
+
+      <h4>CSS selector:</h4>
+      <p>.button</p>
+
+      <h4>Sample code:</h4>
+      <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+      <h4>Rendered element:</h4>
+      <button type="submit">Send</button>
+
+    </section>
+
+
+    <section class="element">
+      <h3>Submit/Reset Buttons</h3>
+      <!-- from chatGPT -->
+      <form action="/submit-form" method="post">
+        <!-- Your form fields go here -->
+
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+
+        <!-- Reset button -->
+        <button type="reset">Reset</button>
+      </form>
+
+    </section>
+
+
+    <section class="element">
+      <h3>Text Input Field</h3>
+      <!-- edited from chatgpt and w3school -->
+      <input type="text" placeholder="Name">
+    </section>
+
+
+    <section class="element">
+      <h3>Radio Button with Label</h3>
+      <form>
+        <!-- from chatGPT -->
+        <!-- Radio button input and label -->
+        <input type="radio" id="option1" name="options" value="option1">
+        <label for="option1">Option 1</label>
+
+        <!-- Additional radio buttons and labels can be added with unique "id" and corresponding "for" attributes -->
+
+        <!-- Submit button (example) -->
+        <button type="submit">Submit</button>
+      </form>
+
+    </section>
+
+
+    <section class="element">
+      <h3>Image as a Link</h3>
+      <!-- from chatgpt and w3school-->
+      <a href="http://www.dumpaday.com/wp-content/uploads/2014/02/random-pictures-132.jpg">
+        <img src="http://www.dumpaday.com/wp-content/uploads/2014/02/random-pictures-132.jpg"
+          alt="Description of the image" width="300">
+      </a>
+    </section>
+
+  </section>
+  <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+  <!-- TEXT ELEMENTS SECTION // -->
+  <section id="text_elements">
+
+    <section class="element">
+      <h3>Headings</h3>
+      <h1>Level 1 Heading</h1>
+      <h2>Level 2 Heading</h2>
+      <h3>Level 3 Heading</h3>
+      <h4>Level 4 Heading</h4>
+    </section>
+
+    <section class="element">
+      <h3>Paragraphs</h3>
+      <p>Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit.
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat.</p>
+
+    </section>
+
+    <section class="element">
+      <h3>Numbered Lists</h3>
+      <ol>
+        <li>Item i</li>
+        <li>Item ii</li>
+        <li>Item iii</li>
+      </ol>
+
+    </section>
+
+  </section>
+  <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+  <!-- COMBINED ELEMENTS SECTION // -->
+  <section id="combined_elements">
+    <h2>Combined Elements</h2>
+
+
+    <section class="element">
+      <h3>Nav Bar</h3>
+      <h4>*on the left column of every page</h4>
+      <!-- edited from chatGPT -->
+      <div class="container">
+
+        <!-- left col -->
+        <div class="left-column">
+          <a href="index.html" class="logo">
+            <img src="img/Asset 17@4x.png" alt="Logo">
+            <h1>Minh Truong</h1>
+          </a>
+
+          <ul class="menu">
+            <li><a href="#footer">About</a></li>
+            <li><a href="index.html">Projects</a></li>
+            <li><a href="#footer">Contact</a></li>
+            <li><a href="styleguide.html">Style guide</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="element"> -->
+    <!-- <h3>Contact Form</h3> -->
+    <!-- edited from chatGPT -->
+    <!-- <section id="body"> -->
+    <!-- <h1>Contact</h1> -->
+
+    <!-- intro frake.io -->
+
+    <!-- <section class="two-column-section"> -->
+    <!-- <div class="column">
+                <img class="about-image" src="brand-photos/logoFrW.png" alt="frake logo" width="300px">
+
+            </div> -->
+    <!-- <div class="column">
+            <h2>Contact</h2>
+            <p>If you have any comments, complaints, or questions, feel free to contact us with the form below!</p>
+          </div>
+        </section> -->
+    <!-- end of about section -->
+
+    <!-- contact form section -->
+
+    <!-- <section>
+          <div class="row input-container">
+            <div class="col-xs-12">
+              <div class="styled-input wide">
+                <input type="text" required />
+                <label>Name</label>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="styled-input">
+                <input type="text" required />
+                <label>Email</label>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="styled-input" style="float:right;">
+                <input type="text" required />
+                <label>Phone Number</label>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="styled-input wide">
+                <textarea required></textarea>
+                <label>Message</label>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <button type="submit">Submit</button>
+            </div>
+
+          </div>
+        </section> -->
+
+    <!-- end of about section -->
+
+
+    <!-- </section> -->
+    <!-- </section> -->
+
+    <!-- Footer section -->
+    <footer id="footer">
+      <div class="empty-column"></div>
+      <div class="footer-column">
+        <div class="about-n-contact">
+          <div class="about">
+            <div class="about-me">
+              <h2>About me</h2>
+              <p>A generalist who’s addicted to dabbling to and learning anything tech, design, and business.
+              </p>
+              <p>Areas I have
+                expertise and am interested in include: graphic design, video/animation production and editing, digital
+                marketing, and social media management.</p>
+            </div>
+            <div class="footer-info">
+              <div class="footer-info-column">
+                <a href="mailto:minhtruong193@gmail.com">
+                  <img src="img/mail.svg" alt="Gmail Logo">
+                  <span>minhtruong193@gmail.com</span>
+                </a>
+              </div>
+              <div class="footer-info-column">
+                <a href="https://www.linkedin.com/in/minhtruong193/">
+                  <img src="img/linkedin.svg" alt="LinkedIn Logo">
+                  <span>/minhtruong193</span>
+                </a>
+              </div>
+              <div class="footer-info-column">
+                <p>© 2024 Minh Truong. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact">
+            <h2>Let's chat</h2>
+            <form>
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="Email">
+              <textarea placeholder="Message"></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+  
+      </div>
+    </footer>
+    <!-- End of Footer section -->
+
+
+  </section>
+  <!-- end of COMBINED ELEMENTS SECTION -->
+
+  <!-- <section class="element">
+    <h2>Basic Branding Ideas</h2>
+
+    <h3>What does the company do, or offer?</h3>
+    <p>Its name is frake - my personal brand. It offers online courses and coaching services about
+      speaking/communication for English learners.</p>
+
+    <h3>Who is the company to potential customers? (as a person)</h3>
+    <p>IELTS English Speaking course: Vietnamese students, age ranging from 15-30, who wants to get a high score in the
+      Speaking section of the IELTS exam.</p>
+    <p>Communication Coaching: 1-to-1 service, based on needs, anyone aged between 15-30. </p>
+
+    <h3>Why might this company entice someone to purchase a product or service</h3>
+    <p>Students in Vietnam lack access to quality Speaking training and many struggle with
+      Speaking skills when it comes to learning English.
+      I want to provide a solution by sharing the knowledge and tips
+      I've earned throught the experienced learner and an international student.</p>
+    <p>Same thing with Communication Coaching. A lot of Vietnamese young adults
+      lack proper training in communicating, leading to missed opportunities
+      for dream jobs or failed relationships with their loved ones.
+      Meanwhile, there are not many coaching services in Vietnam, even though
+      this type of service is popular in a lot of places in the world.</p>
+  </section> -->
+
+
+
+  <!-- <section class="element">
+    <h2>Brand Components</h2>
+    <h3>Fonts</h3>
+    <p>Simple sans-serif such as Roboto or Gotham.</p>
+
+    <h3>Colour Palettes</h3>
+    <div class="container">
+      <div class="square square1"></div>
+      <div class="square square2"></div>
+    </div>
+    <p>Gradient 30⁰ from 0-#668fff-blue to 100-#9d6cf7-violet</p>
+
+    <h3>Potential Imagery, and/or Art Direction</h3>
+    <h4>Logo</h4>
+    <div class="container">
+      <img src="brand-photos/logoFG.png" alt="Brand Logo" width="100">
+      <img src="brand-photos/logoFGs.png" alt="Brand Logo" width="100">
+      <img src="brand-photos/logoFrW.png" alt="Brand Logo" width="100">
+      <img src="brand-photos/logoFW.png" alt="Brand Logo" width="100">
+    </div>
+    <h4>Palette Inspiration</h4>
+    <div class="container">
+      <img src="https://i.pinimg.com/564x/7b/1f/de/7b1fde9ba9ccce87f8b65a3de19e50f5.jpg" alt="" width="200">
+      <img src="https://i.pinimg.com/564x/ea/46/be/ea46bea73d280da5ea2102787de1f87d.jpg" alt="" width="200">
+    </div> -->
+
+  <!-- </section> -->
+
+  <section class="element" id="citations">
+    <h2>Citations</h2>
+
+    <ul>
+      <!-- <li>"Poppins" typeface from Google Fonts: <a
+          href="https://fonts.google.com/specimen/Poppins">https://fonts.google.com/specimen/Poppins</a></li> -->
+      <li>HTML and CSS from: <a href="https://www.w3schools.com/">https://www.w3schools.com/</a></li>
+      <li>OpenAI's ChatGPT: <a href="https://chat.openai.com/">https://chat.openai.com/</a></li>
+      <li>Set the viewport from: <a
+          href="https://web.dev/articles/responsive-web-design-basics">https://web.dev/articles/responsive-web-design-basics</a>
+      </li>
+      <li>Flexbox Cheatsheet Cheatsheet from: <a
+          href="https://jonitrythall.com/flexbox-cheatsheet">https://jonitrythall.com/flexbox-cheatsheet</a></li>
+      <li>Images in project detail pages (including project thumbnails and project banners) are from my personal
+        official portfolio page: <a href="https://www.canva.com/">https://minhtruong00.wordpress.com/</a></li>
+    </ul>
+
+  </section>
+
+
+
+
+</body>
+
+</html>
