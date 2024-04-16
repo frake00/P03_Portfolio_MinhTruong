@@ -2,6 +2,7 @@
 // Variables
 $primary-color: #1d1d1d;
 $secondary-color: white;
+$tertiary-color: rgb(230, 144, 15);
 
 @mixin underline-hover($color) {
     position: relative;
@@ -41,7 +42,7 @@ $secondary-color: white;
         text-decoration: none; // Remove default underline
         color: inherit; // Inherit color from parent
 
-        @include underline-hover($secondary-color); // Apply underline on hover
+        @include underline-hover($tertiary-color); // Apply underline on hover
     }
 }
 
@@ -97,7 +98,7 @@ body {
                     color: inherit;
                     position: relative;
 
-                    @include underline-hover(white);
+                    @include underline-hover($tertiary-color); 
 
                     // &:hover:after {
                     //     content: '';
@@ -220,7 +221,7 @@ footer {
 
                         span {
                             margin-right: 10px;
-                            @include underline-hover(white);
+                            @include underline-hover($tertiary-color);
                         }
                     }
                 }
